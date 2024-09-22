@@ -7,6 +7,7 @@ public class LambdaDemo {
 		demo.add(10, 20);
 
 		
+		
 	}
 	
 	public void add(int a, int b) {
