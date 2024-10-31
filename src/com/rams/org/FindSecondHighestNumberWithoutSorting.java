@@ -19,6 +19,8 @@ public class FindSecondHighestNumberWithoutSorting {
 		Integer secondHighestValue = Arrays.stream(nums).sorted(Comparator.reverseOrder()).skip(1).findFirst()
 				.orElse(0);
 		System.out.println(secondHighestValue);
+		
+		
 
 	}
 
