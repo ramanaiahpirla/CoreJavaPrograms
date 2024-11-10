@@ -9,7 +9,9 @@ public class FrequencyOfEachCharInGivenString {
 		
 		String line = "Ram is employee of ABC company, ram is from Blore, RAM! is good in algorithms.";
 		Map<Character, Long> eachCharFrequency =  line.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-		System.out.println(eachCharFrequency);
+		System.out.println("Frequency of each char : " + eachCharFrequency);
+		
+		
 	}
 
 }
