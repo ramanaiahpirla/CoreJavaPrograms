@@ -18,7 +18,6 @@ public class NumberToWordsExample {
 		for (char digit : numberDigit.toCharArray()) {
 			int digitValue = digit - '0';
 			response.append(digitWords[digitValue]);
-
 		}
 		return response.toString();
 	}
