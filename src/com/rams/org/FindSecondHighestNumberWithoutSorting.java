@@ -21,6 +21,14 @@ public class FindSecondHighestNumberWithoutSorting {
 		System.out.println(secondHighestValue);
 		
 		
+		int[] number = {100,500,600,899,755,333};
+		OptionalInt maxNum = Arrays.stream(number).max();
+		System.out.println(maxNum);
+		OptionalInt secondMax = Arrays.stream(number).filter(n -> n != maxNum.orElse(Integer.MIN_VALUE)).max();
+		if(secondMax.isPresent()) {
+			System.out.println("Second Max : " + secondMax);
+		}
+		
 
 	}
 
