@@ -9,6 +9,7 @@ public class NumberToWordsExample {
 		int number = 12345; // onetwothreefourfive
 		String result = covnertNumberToWord(number);
 		System.out.println(result);
+		
 
 		
 	}
